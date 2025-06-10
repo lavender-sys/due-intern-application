@@ -21,7 +21,7 @@
     color: var(--card-color);
     background-color: var(--card-background);
     margin-bottom: 0;
-    padding: 0.5rem;
+    padding: var(--rvt-spacing-sm);
     border-bottom: 1px solid var(--card-border);
     border-top-left-radius: 0.45rem;
     border-top-right-radius: 0.45rem;
@@ -29,5 +29,5 @@
 
 :is(.rvt-c-card-yes, .rvt-c-card-no) >.rvt-card__content {
     margin-top: 0;
-    padding: 0.5rem;
+    padding: var(--rvt-spacing-sm);
 }

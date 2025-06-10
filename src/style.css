@@ -1,0 +1,33 @@
+@import '../node_modules/rivet-core/css/rivet.css';
+
+.rvt-c-card-yes {
+    --card-color: var(--rvt-color-green-600);
+    --card-background: var(--rvt-color-green-100);
+    --card-border: var(--rvt-color-green-200);
+}
+
+.rvt-c-card-no {
+    --card-color: var(--rvt-color-orange-600);
+    --card-background: var(--rvt-color-orange-100);
+    --card-border: var(--rvt-color-orange-200);
+}
+
+.rvt-c-card-yes, .rvt-c-card-no {
+    flex-basis: 100%;
+    border: 1px solid var(--card-border);
+}
+
+:is(.rvt-c-card-yes, .rvt-c-card-no) >.rvt-card__title {
+    color: var(--card-color);
+    background-color: var(--card-background);
+    margin-bottom: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--card-border);
+    border-top-left-radius: 0.45rem;
+    border-top-right-radius: 0.45rem;
+}
+
+:is(.rvt-c-card-yes, .rvt-c-card-no) >.rvt-card__content {
+    margin-top: 0;
+    padding: 0.5rem;
+}
